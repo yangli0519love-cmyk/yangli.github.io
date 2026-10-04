@@ -1,199 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Yang Li — Spatial Intelligence, Embodied AI and General-Purpose Robotic Manipulation" />
-  <title>Yang Li | Spatial Intelligence & Embodied AI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Yang Li — research in spatial intelligence, multimodal reasoning and robotic manipulation. Explore research and an interactive robot playground.">
+ <meta name="theme-color" content="#f7f8f2"><meta property="og:title" content="Yang Li — Robotics & Spatial Intelligence"><meta property="og:description" content="Helping robots understand the world, and act in it."><meta property="og:type" content="website">
+ <title>Yang Li — Robotics & Spatial Intelligence</title>
+ <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=robot-1">
+ <script defer src="config.js?v=robot-1"></script><script defer src="script.js?v=robot-1"></script>
 </head>
 <body>
-  <div class="mouse-glow" aria-hidden="true"></div>
-  <div class="grid-bg" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner shell">
+ <a class="brand" href="#home" aria-label="Yang Li — home"><span class="brand-mark">yl<span>.</span></span><span class="brand-name">Yang Li<small><span data-en="ROBOTICS RESEARCH" data-zh="机器人研究">ROBOTICS RESEARCH</span></small></span></a>
+ <nav aria-label="Main navigation"><a href="#research"><span data-en="Research" data-zh="研究">Research</span></a><a href="#about"><span data-en="About" data-zh="关于">About</span></a><a href="#contact"><span data-en="Contact" data-zh="联系">Contact</span></a></nav>
+ <div class="header-actions"><button id="language-toggle" class="language-toggle" type="button" aria-label="Switch to Chinese"><span id="lang-en" class="active">EN</span><span class="lang-divider">/</span><span id="lang-zh">中</span></button><a class="icon-link github-link" href="https://github.com/yangli0519love-cmyk" target="_blank" rel="noopener noreferrer" aria-label="Yang Li on GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.3 11.3 0 0 0-3.57 22c.56.1.77-.24.77-.54v-2.13c-3.15.68-3.81-1.34-3.81-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.16 1.74 1.16 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.29-5.15-1.26-5.15-5.59 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.99 0 0 .95-.3 3.11 1.16a10.9 10.9 0 0 1 5.66 0c2.16-1.46 3.1-1.16 3.1-1.16.62 1.56.23 2.71.12 2.99.72.79 1.16 1.8 1.16 3.03 0 4.34-2.65 5.3-5.17 5.58.41.36.77 1.04.77 2.09v3.1c0 .3.2.65.78.54A11.3 11.3 0 0 0 12 .8Z"/></svg></a></div>
+</div></header>
+<main id="main">
+ <section class="hero shell" id="home" aria-labelledby="hero-title">
+  <div class="hero-copy">
+   <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-en="SPATIAL INTELLIGENCE &amp; EMBODIED AI" data-zh="空间智能与具身智能">SPATIAL INTELLIGENCE & EMBODIED AI</span></p>
+   <p class="greeting" data-en="Hello, I’m" data-zh="你好，我是">Hello, I’m</p>
+   <h1 id="hero-title">Yang Li<span class="name-dot">.</span></h1>
+   <h2 class="hero-statement"><span data-en="Helping robots understand&lt;br&gt;the world, &lt;em&gt;and act in it.&lt;/em&gt;" data-zh="让机器人理解世界，&lt;br&gt;&lt;em&gt;并在其中自主行动。&lt;/em&gt;">Helping robots understand<br>the world, <em>and act in it.</em></span></h2>
+   <p class="hero-bio" data-en="I’m an M.Sc. student at &lt;strong&gt;Nanyang Technological University&lt;/strong&gt;, working at the intersection of multimodal reasoning, spatial understanding, and robotic manipulation." data-zh="我是&lt;strong&gt;南洋理工大学&lt;/strong&gt;硕士生，研究聚焦多模态推理、空间理解与机器人操作的交叉方向。">I’m an M.Sc. student at <strong>Nanyang Technological University</strong>, working at the intersection of multimodal reasoning, spatial understanding, and robotic manipulation.</p>
+   <p class="hero-bio secondary" data-en="I build robot agents that use perception, knowledge, and interaction to solve tasks beyond a fixed script." data-zh="我致力于结合感知、知识与交互反馈，构建不局限于固定任务脚本的机器人智能体。">I build robot agents that use perception, knowledge, and interaction to solve tasks beyond a fixed script.</p>
+   <div class="hero-actions"><a class="button primary" href="#research"><span data-en="Explore my research" data-zh="了解我的研究">Explore my research</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="button quiet" href="#about"><span data-en="A little about me" data-zh="更多关于我">A little about me</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div>
+   <div class="hero-topics"><span>Robot Agents</span><span>Spatial Reasoning</span><span>Manipulation</span></div>
+  </div>
+  <div class="robot-playground" id="robot-playground">
+   <div class="scene-header"><span class="scene-title"><span class="tiny-cross" aria-hidden="true">+</span><span data-en="A LITTLE ROBOT, BIG QUESTIONS." data-zh="小小机器人，大大的研究问题。">A LITTLE ROBOT, BIG QUESTIONS.</span></span><button type="button" class="motion-toggle" id="motion-toggle" aria-label="Pause robot animation" title="Pause animation"><svg viewBox="0 0 20 20" aria-hidden="true"><path id="motion-symbol" d="M7 5v10M13 5v10"/></svg></button></div>
+   <div class="robot-speech" id="robot-speech"><span data-en="Oh, hello there." data-zh="你好，很高兴见到你。">Oh, hello there.</span><span class="speech-dot" aria-hidden="true"></span></div>
+   <svg id="robot-svg" viewBox="0 0 720 580" role="img" aria-labelledby="robot-title robot-desc">
+<title id="robot-title">An interactive desktop robot</title>
+<desc id="robot-desc">A small, two-armed robot on a round worktable. Its eyes follow your pointer. Use the controls below to make it wave or pick up a block.</desc>
+<defs>
+ <linearGradient id="shell" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#fffefa"/><stop offset=".5" stop-color="#f3f2e9"/><stop offset="1" stop-color="#d4d9ce"/></linearGradient>
+ <linearGradient id="side" x1="0" x2="1"><stop stop-color="#d8dfd3"/><stop offset="1" stop-color="#aab7a7"/></linearGradient>
+ <linearGradient id="visor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#344f42"/><stop offset="1" stop-color="#152e25"/></linearGradient>
+ <linearGradient id="link" x1="0" x2="1"><stop stop-color="#e4e9de"/><stop offset=".35" stop-color="#fdfbf5"/><stop offset="1" stop-color="#b9c5b4"/></linearGradient>
+ <linearGradient id="joint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#647a67"/><stop offset="1" stop-color="#2c4738"/></linearGradient>
+ <linearGradient id="chest" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a5bba1"/><stop offset="1" stop-color="#6d8b70"/></linearGradient>
+ <linearGradient id="table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f3f3e9"/><stop offset="1" stop-color="#e0e7d9"/></linearGradient>
+ <linearGradient id="tableEdge" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#d6dfcd"/><stop offset="1" stop-color="#c7d2c0"/></linearGradient>
+ <radialGradient id="floorShadow"><stop stop-color="#718469" stop-opacity=".17"/><stop offset="1" stop-color="#718469" stop-opacity="0"/></radialGradient>
+ <radialGradient id="contactShadow"><stop stop-color="#466343" stop-opacity=".25"/><stop offset="1" stop-color="#466343" stop-opacity="0"/></radialGradient>
+ <filter id="softShadow" x="-40%" y="-35%" width="190%" height="190%"><feDropShadow dx="3" dy="8" stdDeviation="8" flood-color="#324c37" flood-opacity=".13"/></filter>
+ <filter id="smallShadow" x="-50%" y="-50%" width="200%" height="230%"><feDropShadow dx="1" dy="4" stdDeviation="3" flood-color="#203e29" flood-opacity=".15"/></filter>
+ <filter id="eyeGlow" x="-80%" y="-40%" width="260%" height="190%"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<!-- Quiet, single surface. No particle fields, moving grids or background rings. -->
+<ellipse cx="373" cy="505" rx="294" ry="43" fill="url(#floorShadow)"/>
+<path d="M89 416v17c0 49 126 89 283 89s283-40 283-89v-17" fill="url(#tableEdge)"/>
+<ellipse cx="372" cy="416" rx="283" ry="89" fill="url(#table)" stroke="#d6dfd0" stroke-width="1.2"/>
+<ellipse cx="372" cy="414" rx="275" ry="83" fill="none" stroke="#fcfcf6" stroke-opacity=".6"/>
+<ellipse cx="370" cy="383" rx="98" ry="31" fill="url(#contactShadow)"/>
+<!-- Drop target on the tabletop. -->
+<g id="drop-target" opacity=".65"><ellipse cx="355" cy="457" rx="42" ry="17" fill="#d7e2d0"/><ellipse cx="355" cy="457" rx="35" ry="13" fill="none" stroke="#8aa381" stroke-width="1" stroke-dasharray="3 4"/><path d="M348 457h14m-7-5v10" fill="none" stroke="#789373" stroke-width="1.1"/></g>
+<!-- Pedestal -->
+<g filter="url(#smallShadow)"><path d="M300 362v15c0 13 31 24 70 24s70-11 70-24v-15" fill="url(#side)"/><ellipse cx="370" cy="362" rx="70" ry="23" fill="url(#shell)"/><ellipse cx="370" cy="360" rx="48" ry="14" fill="#7d9278"/><rect x="345" y="336" width="50" height="29" rx="13" fill="url(#joint)"/></g>
+<!-- Far arm is rendered behind the torso. -->
+<g id="arm-right" filter="url(#smallShadow)">
+ <path id="right-upper" d="M437 239L540.18 225.98" fill="none" stroke="#344e3b" stroke-width="31" stroke-linecap="round"/>
+ <path id="right-upper-light" d="M437 239L540.18 225.98" fill="none" stroke="url(#link)" stroke-width="26" stroke-linecap="round"/>
+ <path id="right-lower" d="M540.18 225.98L515 331" fill="none" stroke="#415c45" stroke-width="27" stroke-linecap="round"/>
+ <path id="right-lower-light" d="M540.18 225.98L515 331" fill="none" stroke="url(#link)" stroke-width="22" stroke-linecap="round"/>
+ <g id="right-elbow" transform="translate(540.18 225.98)"><circle r="18" fill="url(#joint)"/><circle r="11" fill="#a5b69e"/><circle r="6" fill="#526d52"/><path d="M-3 0h6" stroke="#d8e2ce" stroke-width="1.5"/></g>
+ <g id="right-gripper" transform="translate(515 331)"><rect x="-14" y="-10" width="28" height="20" rx="7" fill="url(#joint)"/><rect x="-10" y="-9" width="20" height="7" rx="3" fill="#c4d2bb"/><path d="M-29 5H29" fill="none" stroke="#6d8264" stroke-width="5" stroke-linecap="round"/><path class="finger-l" d="M-13 5v17h7" fill="none" stroke="#4d6650" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path class="finger-r" d="M13 5v17h-7" fill="none" stroke="#4d6650" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<!-- Torso with restrained mechanical detail. -->
+<g filter="url(#softShadow)">
+ <path d="M322 214q47-20 95 0l9 95q-1 45-56 49-58-2-59-49Z" fill="url(#side)"/>
+ <path d="M317 214q44-16 92 0l9 89q-1 45-53 49-53-2-54-48Z" fill="url(#shell)"/>
+ <path d="M335 238q30-9 58 0v60q-27 19-58 0Z" fill="url(#chest)" stroke="#92a68b" stroke-width="1"/>
+ <path d="M341 243q25-7 47 0" stroke="#d6e0cc" stroke-width="2" fill="none"/>
+ <text x="365" y="274" text-anchor="middle" fill="#f8faef" font-size="19" font-family="Arial,sans-serif" font-weight="bold" letter-spacing="2">YL</text>
+ <rect x="356" y="286" width="17" height="3" rx="1.5" fill="#d8f0c7"/>
+ <path d="M350 326h29m-25 5h21" stroke="#b7c4af" stroke-width="2" stroke-linecap="round"/>
+ <circle cx="324" cy="229" r="2.5" fill="#a6b39e"/><circle cx="406" cy="229" r="2.5" fill="#a6b39e"/>
+ <circle cx="437" cy="239" r="22" fill="url(#joint)"/><circle cx="437" cy="239" r="13" fill="url(#side)"/><circle cx="437" cy="239" r="6" fill="#6f856b"/>
+ <circle cx="302" cy="239" r="22" fill="url(#joint)"/><circle cx="302" cy="239" r="13" fill="url(#side)"/><circle cx="302" cy="239" r="6" fill="#6f856b"/>
+</g>
+<!-- Near arm. Both arms use a two-link inverse-kinematics solver. -->
+<g id="arm-left" filter="url(#smallShadow)">
+ <path id="left-upper" d="M302 239L199.14 223.67" fill="none" stroke="#344e3b" stroke-width="31" stroke-linecap="round"/>
+ <path id="left-upper-light" d="M302 239L199.14 223.67" fill="none" stroke="url(#link)" stroke-width="26" stroke-linecap="round"/>
+ <path id="left-lower" d="M199.14 223.67L223 329" fill="none" stroke="#415c45" stroke-width="27" stroke-linecap="round"/>
+ <path id="left-lower-light" d="M199.14 223.67L223 329" fill="none" stroke="url(#link)" stroke-width="22" stroke-linecap="round"/>
+ <g id="left-elbow" transform="translate(199.14 223.67)"><circle r="18" fill="url(#joint)"/><circle r="11" fill="#a5b69e"/><circle r="6" fill="#526d52"/><path d="M-3 0h6" stroke="#d8e2ce" stroke-width="1.5"/></g>
+ <g id="left-gripper" transform="translate(223 329)"><rect x="-14" y="-10" width="28" height="20" rx="7" fill="url(#joint)"/><rect x="-10" y="-9" width="20" height="7" rx="3" fill="#c4d2bb"/><path d="M-29 5H29" fill="none" stroke="#6d8264" stroke-width="5" stroke-linecap="round"/><path class="finger-l" d="M-13 5v17h7" fill="none" stroke="#4d6650" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path class="finger-r" d="M13 5v17h-7" fill="none" stroke="#4d6650" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<!-- Neck & independently articulated head. -->
+<rect x="341" y="195" width="53" height="29" rx="11" fill="url(#joint)"/>
+<rect x="347" y="199" width="41" height="7" rx="3.5" fill="#b9c9af"/>
+<g id="robot-head">
+ <g filter="url(#softShadow)">
+  <rect x="271" y="118" width="27" height="48" rx="13" fill="url(#side)"/>
+  <rect x="446" y="118" width="27" height="48" rx="13" fill="url(#side)"/>
+  <path d="M369 87v-17" stroke="#758c6b" stroke-width="5" stroke-linecap="round"/><circle cx="369" cy="67" r="7" fill="#d88c50"/><circle cx="367" cy="65" r="2" fill="#f7c790"/>
+  <rect x="290" y="86" width="166" height="122" rx="43" fill="url(#side)"/>
+  <rect x="280" y="80" width="171" height="122" rx="43" fill="url(#shell)" stroke="#dde2d5" stroke-width="1"/>
+  <path d="M302 94q61-18 125 0" fill="none" stroke="#fffef8" stroke-width="3" stroke-linecap="round"/>
+  <rect x="293" y="103" width="145" height="78" rx="28" fill="url(#visor)"/>
+  <path d="M309 112q37-9 86-2" fill="none" stroke="#799880" stroke-opacity=".24" stroke-width="3" stroke-linecap="round"/>
+  <g id="robot-eyes"><g id="eye-blink">
+   <rect x="323" y="124" width="16" height="30" rx="8" fill="#d3f6ba" filter="url(#eyeGlow)"/>
+   <rect x="389" y="124" width="16" height="30" rx="8" fill="#d3f6ba" filter="url(#eyeGlow)"/>
+  </g></g>
+  <path id="robot-mouth" d="M355 162q10 7 20 0" fill="none" stroke="#96bd83" stroke-width="2.3" stroke-linecap="round"/>
+  <circle cx="366" cy="190" r="2.5" fill="#aebfa4"/>
+ </g>
+</g>
+<!-- Lightweight scene objects, not model predictions or experimental data. -->
+<g id="object-shadows"><ellipse id="shadow-coral" cx="207" cy="419" rx="31" ry="13" fill="url(#contactShadow)"/><ellipse id="shadow-sage" cx="533" cy="420" rx="29" ry="12" fill="url(#contactShadow)"/></g>
+<g id="object-coral" class="scene-object" data-object="coral" transform="translate(207 397)" tabindex="0" role="button" aria-label="Pick up the orange block">
+ <ellipse class="object-halo" cy="21" rx="35" ry="15" fill="none" stroke="#c6784d" stroke-width="1.4" stroke-dasharray="3 4"/>
+ <path d="M-23-16 0-27 24-16 1-5Z" fill="#f4b48d"/><path d="M-23-16 1-5v34l-24-12Z" fill="#d4885e"/><path d="M1-5 24-16v34L1 29Z" fill="#b96b45"/><path d="M-21-15 1-5 22-15" fill="none" stroke="#f8c5a0" stroke-width="1"/>
+ <path d="M-15-7v18l9 4V-3Z" fill="#eaaa82" opacity=".45"/>
+ <rect x="-35" y="-38" width="70" height="76" fill="transparent"/>
+</g>
+<g id="object-sage" class="scene-object" data-object="sage" transform="translate(533 399)" tabindex="0" role="button" aria-label="Pick up the green block">
+ <ellipse class="object-halo" cy="21" rx="35" ry="15" fill="none" stroke="#76906b" stroke-width="1.4" stroke-dasharray="3 4"/>
+ <path d="M-21-15 1-25 23-14 1-4Z" fill="#b1c5a3"/><path d="M-21-15 1-4v31l-22-11Z" fill="#8ba378"/><path d="M1-4 23-14v30L1 27Z" fill="#6b8960"/><path d="M-19-14 1-4 21-14" fill="none" stroke="#cdddc0" stroke-width="1"/>
+ <rect x="-35" y="-38" width="70" height="76" fill="transparent"/>
+</g>
+<g id="path-annotation" opacity="0" pointer-events="none"><path d="M209 363q16-80 69-41t76 103" fill="none" stroke="#c18d67" stroke-width="1.4" stroke-dasharray="4 5"/></g>
+</svg>
+   <div class="object-invitation" id="object-invitation"><svg viewBox="0 0 48 37" fill="none" aria-hidden="true"><path d="M4 4c1 21 15 28 33 20m-8-1 10 0-4 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-en="try a block" data-zh="点击方块试试">try a block</span></div>
+   <div class="scene-controls"><button id="pick-button" type="button" class="scene-button"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 2 7 4v8l-7 4-7-4V6l7-4ZM3 6l7 4 7-4m-7 4v8"/></svg><span data-en="Pick &amp; place" data-zh="抓取放置">Pick & place</span></button><button id="wave-button" type="button" class="scene-button"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 9V5a1 1 0 0 1 2 0v4-6a1 1 0 0 1 2 0v6-7a1 1 0 0 1 2 0v7-5a1 1 0 0 1 2 0v6l1-1a1.3 1.3 0 0 1 2 1.5L13 16a4 4 0 0 1-7-1l-3-4a1.3 1.3 0 0 1 2-2Z"/></svg><span data-en="Say hello" data-zh="打个招呼">Say hello</span></button><button id="reset-button" type="button" class="scene-reset" aria-label="Reset robot and blocks" title="Reset"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 6a7 7 0 1 1-1 6M4 2v5h5"/></svg></button></div>
+   <p class="scene-status" id="scene-status" role="status" aria-live="polite"><span data-en="Move your cursor. I’m paying attention." data-zh="移动鼠标，我会看向你。">Move your cursor. I’m paying attention.</span></p>
+   <p class="scene-note"><span data-en="Interactive illustration · not an experimental demo" data-zh="可交互概念示意 · 非真实实验演示">Interactive illustration · not an experimental demo</span></p>
+  </div>
+ </section>
+ <div class="intro-strip shell"><div><span class="strip-label"><span data-en="BASED AT" data-zh="就读院校">BASED AT</span></span><span class="strip-value">Nanyang Technological University</span></div><div><span class="strip-label"><span data-en="WORKING ON" data-zh="研究重点">WORKING ON</span></span><span class="strip-value"><span data-en="Robot agents for the open world" data-zh="面向开放世界的机器人智能体">Robot agents for the open world</span></span></div><a class="strip-scroll" href="#research"><span data-en="SCROLL TO EXPLORE" data-zh="向下探索">SCROLL TO EXPLORE</span><span>↓</span></a></div>
 
-  <header class="site-header">
-    <a class="brand" href="#top">YL<span>.</span></a>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#interests">Research</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+ <section class="section shell" id="research" aria-labelledby="research-title">
+  <div class="section-top"><div><p class="section-label">01 / <span data-en="SELECTED RESEARCH" data-zh="代表性研究">SELECTED RESEARCH</span></p><h2 id="research-title"><span data-en="From reasoning&lt;br&gt;to &lt;em&gt;physical action.&lt;/em&gt;" data-zh="从认知推理，&lt;br&gt;到&lt;em&gt;真实行动。&lt;/em&gt;">From reasoning<br>to <em>physical action.</em></span></h2></div><p class="section-intro" data-en="Exploring how robots can perceive more,&lt;br&gt;reason better, and act beyond the familiar." data-zh="探索机器人如何感知更多、推理更好，&lt;br&gt;并在不熟悉的环境中可靠行动。">Exploring how robots can perceive more,<br>reason better, and act beyond the familiar.</p></div>
+  <div class="projects"><article class="project-row" id="project-ream">
+ <button class="project-art ream-art" type="button" data-project="ream" aria-label="Read about REAM"><img src="assets/ream.svg" alt="Conceptual illustration of REAM" loading="eager" width="600" height="360"><span class="art-caption"><span data-en="CONCEPT STUDY" data-zh="概念示意">CONCEPT STUDY</span><span>01</span></span></button>
+ <div class="project-copy"><div class="project-category"><span data-en="ACTIVE PERCEPTION · MEMORY" data-zh="主动感知 · 记忆增强">ACTIVE PERCEPTION · MEMORY</span></div><h3>Think Before You Act</h3><p class="project-subtitle">Knowledge-Driven Continuous Manipulation for Open-World Robotic Tasks</p><p class="project-summary" data-en="Knowledge and interaction history help robots search for hidden objects, revise their plans, and keep manipulating in partially observed environments." data-zh="结合常识先验与交互历史，使机器人能够搜索隐藏目标、更新计划，并在部分可观测环境中持续完成操作。">Knowledge and interaction history help robots search for hidden objects, revise their plans, and keep manipulating in partially observed environments.</p><div class="project-actions"><button type="button" class="text-link" data-project="ream"><span data-en="Read overview" data-zh="研究简介">Read overview</span> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button><div data-links="ream" class="resource-links"></div></div></div>
+ </article><article class="project-row" id="project-unimanip">
+ <button class="project-art unimanip-art" type="button" data-project="unimanip" aria-label="Read about UniManip"><img src="assets/unimanip.svg" alt="Conceptual illustration of UniManip" loading="eager" width="600" height="360"><span class="art-caption"><span data-en="CONCEPT STUDY" data-zh="概念示意">CONCEPT STUDY</span><span>02</span></span></button>
+ <div class="project-copy"><div class="project-category"><span data-en="ROBOT AGENTS · ZERO-SHOT MANIPULATION" data-zh="机器人智能体 · 零样本操作">ROBOT AGENTS · ZERO-SHOT MANIPULATION</span></div><h3>UniManip</h3><p class="project-subtitle">General-Purpose Zero-Shot Robotic Manipulation with Agentic Operational Graph</p><p class="project-summary" data-en="An agentic operational graph connects task reasoning with executable skills, supporting feedback-driven adjustments during robot manipulation." data-zh="通过 Agentic Operational Graph 连接高层任务推理与可执行技能，并结合执行反馈调整操作过程。">An agentic operational graph connects task reasoning with executable skills, supporting feedback-driven adjustments during robot manipulation.</p><div class="project-actions"><button type="button" class="text-link" data-project="unimanip"><span data-en="Read overview" data-zh="研究简介">Read overview</span> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button><div data-links="unimanip" class="resource-links"></div></div></div>
+ </article><article class="project-row" id="project-anydex">
+ <button class="project-art anydex-art" type="button" data-project="anydex" aria-label="Read about AnyDexManip"><img src="assets/anydex.svg" alt="Conceptual illustration of AnyDexManip" loading="eager" width="600" height="360"><span class="art-caption"><span data-en="CONCEPT STUDY" data-zh="概念示意">CONCEPT STUDY</span><span>03</span></span></button>
+ <div class="project-copy"><div class="project-category"><span data-en="DEXTEROUS MANIPULATION · VLM" data-zh="灵巧操作 · 视觉语言模型">DEXTEROUS MANIPULATION · VLM</span></div><h3>AnyDexManip</h3><p class="project-subtitle">Multi-Fingered Dexterous Manipulation with VLM-Guided Affordance Reasoning and Spatial Understanding</p><p class="project-summary" data-en="Using affordance reasoning and spatial understanding to connect what an object is for with how a multi-fingered hand should interact with it." data-zh="借助可供性推理与空间理解，将物体功能、可交互区域与多指灵巧手的操作决策联系起来。">Using affordance reasoning and spatial understanding to connect what an object is for with how a multi-fingered hand should interact with it.</p><div class="project-actions"><button type="button" class="text-link" data-project="anydex"><span data-en="Read overview" data-zh="研究简介">Read overview</span> <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button><div data-links="anydex" class="resource-links"></div></div></div>
+ </article></div>
+  <div class="other-research"><p class="minor-heading"><span data-en="ALSO EXPLORING" data-zh="其他研究">ALSO EXPLORING</span></p><article class="other-row"><span class="other-number">04</span><div><h3>VLAI</h3><p data-en="Visual-language aligned information guides exploration and the use of existing semantic evidence during object-goal navigation." data-zh="通过视觉语言对齐信息，引导机器人在目标物体导航中协同进行环境探索与已有语义线索的利用。">Visual-language aligned information guides exploration and the use of existing semantic evidence during object-goal navigation.</p></div><button class="round-link" type="button" data-project="vlai" aria-label="Read about VLAI"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button></article><article class="other-row"><span class="other-number">05</span><div><h3>Beyond Phonetic Similarity</h3><p data-en="Evaluating Chinese LLM robustness to IME-based mistype perturbations caused by adjacent-key substitutions." data-zh="围绕拼音输入法中相邻按键误触造成的输入扰动，评估中文大语言模型的鲁棒性。">Evaluating Chinese LLM robustness to IME-based mistype perturbations caused by adjacent-key substitutions.</p></div><button class="round-link" type="button" data-project="mistype" aria-label="Read about Beyond Phonetic Similarity"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button></article></div>
+ </section>
 
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-content reveal">
-        <div class="eyebrow">Spatial Intelligence · Embodied AI · Multimodal Robotics</div>
-        <h1>Yang Li</h1>
-        <p class="hero-line">Building robots that <span>perceive, reason, and act</span> in open worlds.</p>
-        <p class="hero-desc">
-          I work on spatial intelligence, multimodal foundation models, robot agents, active perception and general-purpose manipulation.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#work">Selected Work</a>
-          <a class="btn ghost" href="#contact">Contact</a>
-          <a class="btn ghost" href="#" aria-label="CV placeholder">CV ↗</a>
-        </div>
-      </div>
+ <section class="about-section" id="about" aria-labelledby="about-title"><div class="shell section">
+  <div class="section-top"><div><p class="section-label">02 / <span data-en="ABOUT ME" data-zh="关于我">ABOUT ME</span></p><h2 id="about-title"><span data-en="Curious by nature.&lt;br&gt;&lt;em&gt;Hands-on by choice.&lt;/em&gt;" data-zh="保持好奇，&lt;br&gt;&lt;em&gt;也坚持动手。&lt;/em&gt;">Curious by nature.<br><em>Hands-on by choice.</em></span></h2></div></div>
+  <div class="about-grid"><div class="about-text"><p class="about-lead" data-en="I’m interested in a simple question: &lt;strong&gt;how can a robot make sense of a complex world, and decide what to do next?&lt;/strong&gt;" data-zh="我关注一个看似简单的问题：&lt;strong&gt;机器人如何理解复杂世界，并决定下一步该做什么？&lt;/strong&gt;">I’m interested in a simple question: <strong>how can a robot make sense of a complex world, and decide what to do next?</strong></p><p data-en="My work spans active perception, knowledge- and memory-guided planning, multimodal agents, and robotic manipulation. I’m particularly drawn to tasks where a robot needs to look again, interact, or revise its assumptions before it can act effectively." data-zh="我的研究涉及主动感知、知识与记忆驱动规划、多模态智能体和机器人操作。我尤其关注那些需要机器人重新观察、主动交互或修正判断，才能有效执行的任务。">My work spans active perception, knowledge- and memory-guided planning, multimodal agents, and robotic manipulation. I’m particularly drawn to tasks where a robot needs to look again, interact, or revise its assumptions before it can act effectively.</p><p data-en="I enjoy connecting algorithm design with working systems: building perception–planning–control pipelines, evaluating them in simulation, and debugging their behavior on real robots. My longer-term interest is in more general robot agents for open-world interaction, manipulation, and control." data-zh="我喜欢将算法设计落到可运行的系统中：搭建感知—规划—控制流程，在仿真中评估，并在真实机器人上调试。长期希望探索更加通用的机器人智能体，实现开放世界中的交互、操作与控制。">I enjoy connecting algorithm design with working systems: building perception–planning–control pipelines, evaluating them in simulation, and debugging their behavior on real robots. My longer-term interest is in more general robot agents for open-world interaction, manipulation, and control.</p>
+ <div class="beyond-lab"><span class="football-icon" aria-hidden="true">⚽</span><div><h3><span data-en="Beyond the lab" data-zh="实验室之外">Beyond the lab</span></h3><p data-en="I also served as captain of the SWJTU–Leeds Joint School football team. A different kind of multi-agent coordination." data-zh="我曾担任西南交通大学利兹学院足球队队长。在球场上，也体验另一种“多智能体协作”。">I also served as captain of the SWJTU–Leeds Joint School football team. A different kind of multi-agent coordination.</p></div></div></div>
+ <div class="background"><p class="minor-heading"><span data-en="EDUCATION" data-zh="教育背景">EDUCATION</span></p><div class="education-entry"><span class="education-symbol">N</span><div><h3>Nanyang Technological University</h3><p data-en="M.Sc. · School of Electrical &amp; Electronic Engineering" data-zh="硕士 · 电气与电子工程学院">M.Sc. · School of Electrical & Electronic Engineering</p><span class="edu-place">Singapore</span></div></div><div class="education-entry"><span class="education-symbol secondary-symbol">S/L</span><div><h3><span data-en="SWJTU–Leeds Joint School" data-zh="西南交通大学利兹学院">SWJTU–Leeds Joint School</span></h3><p data-en="Southwest Jiaotong University / University of Leeds" data-zh="西南交通大学 / 利兹大学">Southwest Jiaotong University / University of Leeds</p><span class="edu-place"><span data-en="Undergraduate education" data-zh="本科教育">Undergraduate education</span></span></div></div><div class="research-note"><span class="note-cross">+</span><p data-en="My research lives at the intersection of&lt;br&gt;&lt;strong&gt;understanding, reasoning, and doing.&lt;/strong&gt;" data-zh="我的研究连接着&lt;br&gt;&lt;strong&gt;理解、推理与行动。&lt;/strong&gt;">My research lives at the intersection of<br><strong>understanding, reasoning, and doing.</strong></p></div></div></div>
+ <div class="capabilities"><div><p class="minor-heading"><span data-en="ALGORITHMS" data-zh="算法能力">ALGORITHMS</span></p><h3><span data-en="Making sense of the world." data-zh="理解复杂世界。">Making sense of the world.</span></h3><p data-en="Multimodal reasoning · VLM / LLM agents · Active perception · Memory-augmented planning · Affordance reasoning" data-zh="多模态推理 · VLM / LLM 智能体 · 主动感知 · 记忆增强规划 · 可供性推理">Multimodal reasoning · VLM / LLM agents · Active perception · Memory-augmented planning · Affordance reasoning</p></div><div><p class="minor-heading"><span data-en="ENGINEERING" data-zh="工程能力">ENGINEERING</span></p><h3><span data-en="Making the system work." data-zh="让系统真正运行。">Making the system work.</span></h3><p data-en="Python · PyTorch · MuJoCo · RGB-D perception · Robot system integration · Simulation &amp; real-robot evaluation" data-zh="Python · PyTorch · MuJoCo · RGB-D 感知 · 机器人系统集成 · 仿真与真机验证">Python · PyTorch · MuJoCo · RGB-D perception · Robot system integration · Simulation & real-robot evaluation</p></div></div>
+ </div></section>
 
-      <div class="hero-orbit reveal delay-1" aria-hidden="true">
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="orbit-center">Robot<br>Agent</div>
-        <span class="orbit-label l1">Vision</span>
-        <span class="orbit-label l2">Memory</span>
-        <span class="orbit-label l3">Planning</span>
-        <span class="orbit-label l4">Action</span>
-      </div>
-    </section>
-
-    <section id="work" class="section-shell section-block">
-      <div class="section-heading reveal">
-        <div>
-          <div class="section-kicker">Selected Work</div>
-          <h2>Research that connects <span>reasoning</span> with <span>physical action.</span></h2>
-        </div>
-      </div>
-
-      <div class="featured-work">
-        <article class="work-card reveal tilt-card">
-          <div class="work-visual visual-ream">
-            <div class="mini-flow"><span>Prior</span><b>→</b><span>Search</span><b>→</b><span>Interact</span><b>→</b><span>Replan</span></div>
-            <div class="visual-title">REAM</div>
-          </div>
-          <div class="work-copy">
-            <div class="work-meta">Open-World Manipulation · Active Perception · Memory</div>
-            <h3>Think Before You Act</h3>
-            <p>Knowledge-driven continuous manipulation using commonsense and episodic memory to search, interact and replan under occlusion, containment and out-of-view conditions.</p>
-            <div class="work-links"><a href="#">Paper ↗</a><a href="#">Video ↗</a><a href="#">Project ↗</a></div>
-          </div>
-        </article>
-
-        <article class="work-card reveal tilt-card">
-          <div class="work-visual visual-unimanip">
-            <div class="graph-mini"><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="visual-title">UniManip</div>
-          </div>
-          <div class="work-copy">
-            <div class="work-meta">Zero-Shot Manipulation · Robot Agent · Skill Graph</div>
-            <h3>UniManip</h3>
-            <p>A general-purpose zero-shot manipulation framework built around an Agentic Operational Graph for task decomposition, reusable skill composition and closed-loop adaptation.</p>
-            <div class="work-links"><a href="#">Paper ↗</a><a href="#">Code ↗</a><a href="#">Project ↗</a></div>
-          </div>
-        </article>
-
-        <article class="work-card reveal tilt-card">
-          <div class="work-visual visual-dex">
-            <div class="hand-shape"><span></span><span></span><span></span><span></span><span></span></div>
-            <div class="visual-title">AnyDexManip</div>
-          </div>
-          <div class="work-copy">
-            <div class="work-meta">Dexterous Manipulation · Affordance · VLM</div>
-            <h3>AnyDexManip</h3>
-            <p>VLM-guided affordance reasoning and spatial understanding for multi-fingered dexterous manipulation, targeting stronger zero-shot generalization to unseen objects and tasks.</p>
-            <div class="work-links"><a href="#">Paper ↗</a><a href="#">Video ↗</a><a href="#">Project ↗</a></div>
-          </div>
-        </article>
-      </div>
-
-      <div class="more-work reveal">
-        <div class="more-label">More publications</div>
-        <a href="#" class="more-item"><span>VLAI</span><small>Visual-Language Aligned Information for Object Goal Navigation</small><b>2026 ↗</b></a>
-        <a href="#" class="more-item"><span>Beyond Phonetic Similarity</span><small>LLM Robustness under Realistic Keyboard Mis-typing</small><b>2026 ↗</b></a>
-      </div>
-    </section>
-
-    <section id="interests" class="section-shell section-block">
-      <div class="section-heading reveal compact">
-        <div>
-          <div class="section-kicker">Research Interests</div>
-          <h2>Three directions, one goal.</h2>
-        </div>
-      </div>
-      <div class="interest-grid">
-        <article class="interest-card reveal">
-          <span>01</span>
-          <h3>Spatial Intelligence</h3>
-          <p>Understanding object relations, hidden states, partial observability and geometry in complex 3D environments.</p>
-        </article>
-        <article class="interest-card reveal delay-1">
-          <span>02</span>
-          <h3>Robot Agents</h3>
-          <p>Unifying perception, memory, planning, skills and feedback into general-purpose embodied agent architectures.</p>
-        </article>
-        <article class="interest-card reveal delay-2">
-          <span>03</span>
-          <h3>Generalist Manipulation</h3>
-          <p>Zero-shot and long-horizon manipulation across objects, tasks, embodiments and end-effectors.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section-shell section-block about-section">
-      <div class="about-main reveal">
-        <div class="section-kicker">About</div>
-        <h2>I build multimodal systems that can move from <span>understanding</span> to <span>execution.</span></h2>
-        <p>
-          My research spans VLM / LLM reasoning, active perception, robot planning and manipulation. I enjoy working across the full stack — from algorithm design and evaluation to simulation, system integration and real-robot deployment.
-        </p>
-      </div>
-
-      <div class="about-side reveal delay-1">
-        <div class="about-item">
-          <small>Education</small>
-          <strong>Nanyang Technological University</strong>
-          <p>M.Sc. in Electrical & Electronic Engineering</p>
-        </div>
-        <div class="about-item">
-          <small>Focus</small>
-          <strong>Spatial Intelligence & Embodied AI</strong>
-          <p>VLM · VLA · Agent · Manipulation</p>
-        </div>
-        <div class="about-item">
-          <small>Leadership</small>
-          <strong>Football Team Captain</strong>
-          <p>SWJTU–Leeds Joint School</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell section-block capabilities-section">
-      <div class="capability reveal">
-        <div class="section-kicker">Algorithm</div>
-        <h3>Multimodal reasoning · VLM / LLM agents · Active perception · Spatial reasoning · Skill planning · VLA</h3>
-      </div>
-      <div class="capability reveal delay-1">
-        <div class="section-kicker">Engineering</div>
-        <h3>Python · PyTorch · MuJoCo · Robotics integration · RGB-D perception · Motion planning · Real-robot deployment</h3>
-      </div>
-    </section>
-
-    <section id="contact" class="section-shell contact-section reveal">
-      <div class="contact-card">
-        <div>
-          <div class="section-kicker">Contact</div>
-          <h2>Let’s build more capable robot agents.</h2>
-          <p>Open to research collaborations and PhD opportunities in embodied AI, multimodal reasoning, spatial intelligence and robot learning.</p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:your.email@example.com">Email <span>↗</span></a>
-          <a href="https://github.com/yangli0519love-cmyk" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-          <a href="#">Google Scholar <span>↗</span></a>
-          <a href="#">LinkedIn <span>↗</span></a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="section-shell site-footer">
-    <span>© <span id="year"></span> Yang Li</span>
-    <span>Spatial Intelligence · Embodied AI · Robotics</span>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+ <section class="contact-section shell section" id="contact" aria-labelledby="contact-title"><div><p class="section-label">03 / <span data-en="LET’S CONNECT" data-zh="保持联系">LET’S CONNECT</span></p><h2 id="contact-title"><span data-en="Good ideas start&lt;br&gt;with &lt;em&gt;a conversation.&lt;/em&gt;" data-zh="好的想法，&lt;br&gt;始于&lt;em&gt;一次交流。&lt;/em&gt;">Good ideas start<br>with <em>a conversation.</em></span></h2><p class="contact-desc" data-en="Interested in robot agents, spatial intelligence, or multimodal reasoning?&lt;br&gt;I’d be glad to exchange ideas." data-zh="欢迎交流机器人智能体、空间智能与多模态推理。&lt;br&gt;期待一起探索新的研究问题。">Interested in robot agents, spatial intelligence, or multimodal reasoning?<br>I’d be glad to exchange ideas.</p></div><div class="contact-actions"><a class="button primary github-link" href="https://github.com/yangli0519love-cmyk" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.3 11.3 0 0 0-3.57 22c.56.1.77-.24.77-.54v-2.13c-3.15.68-3.81-1.34-3.81-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.16 1.74 1.16 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.29-5.15-1.26-5.15-5.59 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.99 0 0 .95-.3 3.11 1.16a10.9 10.9 0 0 1 5.66 0c2.16-1.46 3.1-1.16 3.1-1.16.62 1.56.23 2.71.12 2.99.72.79 1.16 1.8 1.16 3.03 0 4.34-2.65 5.3-5.17 5.58.41.36.77 1.04.77 2.09v3.1c0 .3.2.65.78.54A11.3 11.3 0 0 0 12 .8Z"/></svg><span data-en="Find me on GitHub" data-zh="通过 GitHub 了解我">Find me on GitHub</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><div id="extra-contact" class="extra-contact"></div><span class="contact-signature">Yang Li<span>.</span></span></div></section>
+</main>
+<footer class="shell site-footer"><span>© <span id="year">2026</span> Yang Li</span><span><span data-en="Research, engineering, and a little curiosity." data-zh="科研、工程，以及一点好奇心。">Research, engineering, and a little curiosity.</span></span><a href="#home"><span data-en="Back to top" data-zh="回到顶部">Back to top</span> ↑</a></footer>
+<dialog id="project-dialog" aria-labelledby="dialog-title"><button type="button" id="close-dialog" class="dialog-close" aria-label="Close research overview">×</button><p class="section-label" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-subtitle"></p><div class="dialog-rule"></div><h3 id="dialog-heading">Research overview</h3><p id="dialog-body"></p><div id="dialog-focus"></div><div id="dialog-links" class="resource-links"></div></dialog>
+<script id="project-data" type="application/json">[{"id": "ream", "short": "REAM", "cat": ["ACTIVE PERCEPTION · MEMORY", "主动感知 · 记忆增强"], "title": "Think Before You Act", "sub": "Knowledge-Driven Continuous Manipulation for Open-World Robotic Tasks", "summary": ["Knowledge and interaction history help robots search for hidden objects, revise their plans, and keep manipulating in partially observed environments.", "结合常识先验与交互历史，使机器人能够搜索隐藏目标、更新计划，并在部分可观测环境中持续完成操作。"], "detail": ["REAM combines commonsense memory with episodic memory to guide active manipulation. Rather than treating a single image as a complete description of the world, it uses actions to reveal missing information: changing viewpoints, inspecting receptacles, and interacting with occlusions. New observations inform the next search and manipulation decision.", "REAM 将常识记忆与情景记忆结合，用于引导主动操作。它不将单张图像视为环境的全部信息，而是通过调整视角、检查容器及与遮挡物交互来获取新信息，并根据新的观测更新搜索与操作决策。"], "focus": ["Knowledge-driven planning / Active perception / Closed-loop manipulation", "知识驱动规划 / 主动感知 / 闭环操作"]}, {"id": "unimanip", "short": "UniManip", "cat": ["ROBOT AGENTS · ZERO-SHOT MANIPULATION", "机器人智能体 · 零样本操作"], "title": "UniManip", "sub": "General-Purpose Zero-Shot Robotic Manipulation with Agentic Operational Graph", "summary": ["An agentic operational graph connects task reasoning with executable skills, supporting feedback-driven adjustments during robot manipulation.", "通过 Agentic Operational Graph 连接高层任务推理与可执行技能，并结合执行反馈调整操作过程。"], "detail": ["UniManip studies general-purpose, zero-shot manipulation through an Agentic Operational Graph. The research connects language-level task understanding to operational skills, with attention to how plans and skill parameters can be adjusted using execution feedback. The aim is to build robot agents that are less tied to a single object, scene, or task script.", "UniManip 围绕 Agentic Operational Graph 探索通用零样本机器人操作，将语言层面的任务理解连接到具体操作技能，并关注如何利用执行反馈调整计划与技能参数，减少机器人对特定物体、场景或固定任务脚本的依赖。"], "focus": ["Task reasoning / Skill composition / Execution feedback", "任务推理 / 技能组合 / 执行反馈"]}, {"id": "anydex", "short": "AnyDexManip", "cat": ["DEXTEROUS MANIPULATION · VLM", "灵巧操作 · 视觉语言模型"], "title": "AnyDexManip", "sub": "Multi-Fingered Dexterous Manipulation with VLM-Guided Affordance Reasoning and Spatial Understanding", "summary": ["Using affordance reasoning and spatial understanding to connect what an object is for with how a multi-fingered hand should interact with it.", "借助可供性推理与空间理解，将物体功能、可交互区域与多指灵巧手的操作决策联系起来。"], "detail": ["AnyDexManip explores the role of vision-language models in multi-fingered dexterous manipulation. Its focus is on relating object semantics, task-relevant affordances, and spatial constraints to manipulation decisions, bridging high-level understanding and physical interaction.", "AnyDexManip 探索视觉语言模型在多指灵巧操作中的作用，重点研究如何将物体语义、任务相关可供性与空间约束关联到操作决策，连接高层理解与实际物理交互。"], "focus": ["Affordance reasoning / Spatial understanding / Multi-fingered manipulation", "可供性推理 / 空间理解 / 多指灵巧操作"]}, {"id": "vlai", "short": "VLAI", "cat": ["OBJECT-GOAL NAVIGATION", "目标物体导航"], "title": "VLAI", "sub": "Exploration and Exploitation Based on Visual-Language Aligned Information for Robotic Object Goal Navigation", "summary": ["Visual-language aligned information guides exploration and the use of existing semantic evidence during object-goal navigation.", "通过视觉语言对齐信息，引导机器人在目标物体导航中协同进行环境探索与已有语义线索的利用。"], "detail": ["This work studies how visual-language alignment can help robots search for a target object in unfamiliar environments. It focuses on balancing exploration of new regions with exploitation of the semantic information already available to the agent.", "该工作研究视觉语言对齐信息如何帮助机器人在未知环境中搜索目标物体，关注如何平衡对新区域的探索与对已有语义信息的利用。"], "focus": ["Visual-language alignment / Semantic exploration / Object-goal navigation", "视觉语言对齐 / 语义探索 / 目标物体导航"]}, {"id": "mistype", "short": "LLM Robustness", "cat": ["MULTIMODAL & LANGUAGE MODELS", "多模态与语言模型"], "title": "Beyond Phonetic Similarity", "sub": "Unraveling LLM Robustness under Realistic Keyboard Mis-typing Perturbations", "summary": ["Evaluating Chinese LLM robustness to IME-based mistype perturbations caused by adjacent-key substitutions.", "围绕拼音输入法中相邻按键误触造成的输入扰动，评估中文大语言模型的鲁棒性。"], "detail": ["This research examines Chinese language-model robustness under IME-based mistype perturbations. The perturbation setting is grounded in keyboard spatial structure and adjacent-key substitutions, rather than phonetic similarity alone. It investigates how such input noise affects model performance across Chinese-language tasks.", "该研究面向中文输入法误触场景下的语言模型鲁棒性，以键盘空间结构与相邻按键替换为基础构造扰动，而非仅依赖拼音相似性，分析此类输入噪声对中文任务表现的影响。"], "focus": ["IME-based mistype / Adjacent-key substitutions / Robustness evaluation", "输入法误触 / 相邻按键替换 / 鲁棒性评估"]}]</script>
+<noscript><div class="noscript-note">The research and biography are available without JavaScript. Enable JavaScript for the interactive robot and research-overview dialogs.</div></noscript>
+</body></html>

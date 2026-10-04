@@ -11,246 +11,179 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise"></div>
+  <div class="mouse-glow" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
   <header class="site-header">
     <a class="brand" href="#top">YL<span>.</span></a>
     <nav>
+      <a href="#work">Work</a>
+      <a href="#interests">Research</a>
       <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <div class="eyebrow">Spatial Intelligence · Embodied AI · Robot Learning</div>
-        <h1>Building robots that can <span>understand, reason and act</span> in open worlds.</h1>
-        <p class="hero-sub">
-          I am <strong>Yang Li</strong>, an M.Sc. researcher in Electrical & Electronic Engineering at Nanyang Technological University. My work focuses on spatial intelligence, multimodal foundation models, agentic robotics, active perception and general-purpose robotic manipulation.
+      <div class="hero-content reveal">
+        <div class="eyebrow">Spatial Intelligence · Embodied AI · Multimodal Robotics</div>
+        <h1>Yang Li</h1>
+        <p class="hero-line">Building robots that <span>perceive, reason, and act</span> in open worlds.</p>
+        <p class="hero-desc">
+          I work on spatial intelligence, multimodal foundation models, robot agents, active perception and general-purpose manipulation.
         </p>
         <div class="hero-actions">
-          <a class="btn primary" href="#publications">View Research</a>
-          <a class="btn ghost" href="#contact">Get in Touch</a>
-        </div>
-        <div class="hero-meta">
-          <div><span>Current focus</span><strong>Open-world robotic agents</strong></div>
-          <div><span>Research stack</span><strong>VLM · VLA · Agent · Manipulation</strong></div>
-          <div><span>PhD interest</span><strong>2027 Spring / Fall</strong></div>
+          <a class="btn primary" href="#work">Selected Work</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+          <a class="btn ghost" href="#" aria-label="CV placeholder">CV ↗</a>
         </div>
       </div>
-      <div class="hero-visual reveal delay-1" aria-hidden="true">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="graph-card glass">
-          <div class="node n1">Vision</div>
-          <div class="node n2">Memory</div>
-          <div class="node n3">Reasoning</div>
-          <div class="node n4">Planning</div>
-          <div class="node n5">Action</div>
-          <svg viewBox="0 0 520 420" role="presentation">
-            <path d="M118 103 C185 70, 257 65, 321 111" />
-            <path d="M323 116 C355 155, 359 214, 335 259" />
-            <path d="M329 266 C285 325, 215 334, 160 293" />
-            <path d="M154 284 C111 251, 92 186, 113 133" />
-            <path d="M157 129 C217 155, 274 198, 326 248" />
-          </svg>
-          <div class="center-chip">Agentic<br/>Robot</div>
-        </div>
+
+      <div class="hero-orbit reveal delay-1" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit-center">Robot<br>Agent</div>
+        <span class="orbit-label l1">Vision</span>
+        <span class="orbit-label l2">Memory</span>
+        <span class="orbit-label l3">Planning</span>
+        <span class="orbit-label l4">Action</span>
       </div>
     </section>
 
-    <section id="about" class="section-shell split-section">
-      <div class="section-kicker reveal">01 — About</div>
-      <div class="about-grid">
-        <div class="reveal">
-          <h2>I work at the intersection of <span>multimodal intelligence</span> and <span>robotics.</span></h2>
-        </div>
-        <div class="about-copy reveal delay-1">
-          <p>
-            My research asks a simple question: how can a robot continuously understand a complex scene, use prior knowledge, learn from interaction, and turn multimodal reasoning into reliable physical actions?
-          </p>
-          <p>
-            I have experience across the full robotics pipeline — from algorithm design and multimodal perception to simulation, system integration, manipulation control and real-robot deployment. I am particularly interested in general-purpose agent architectures that unify perception, memory, planning and action for long-horizon open-world tasks.
-          </p>
-          <div class="tag-row">
-            <span>Spatial Intelligence</span><span>Embodied AI</span><span>VLM / VLA</span><span>Active Perception</span><span>Robot Agents</span><span>Dexterous Manipulation</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="research" class="section-shell">
+    <section id="work" class="section-shell section-block">
       <div class="section-heading reveal">
-        <div class="section-kicker">02 — Research</div>
-        <h2>Research themes</h2>
+        <div>
+          <div class="section-kicker">Selected Work</div>
+          <h2>Research that connects <span>reasoning</span> with <span>physical action.</span></h2>
+        </div>
       </div>
-      <div class="cards research-cards">
-        <article class="research-card reveal">
-          <div class="index">A</div>
+
+      <div class="featured-work">
+        <article class="work-card reveal tilt-card">
+          <div class="work-visual visual-ream">
+            <div class="mini-flow"><span>Prior</span><b>→</b><span>Search</span><b>→</b><span>Interact</span><b>→</b><span>Replan</span></div>
+            <div class="visual-title">REAM</div>
+          </div>
+          <div class="work-copy">
+            <div class="work-meta">Open-World Manipulation · Active Perception · Memory</div>
+            <h3>Think Before You Act</h3>
+            <p>Knowledge-driven continuous manipulation using commonsense and episodic memory to search, interact and replan under occlusion, containment and out-of-view conditions.</p>
+            <div class="work-links"><a href="#">Paper ↗</a><a href="#">Video ↗</a><a href="#">Project ↗</a></div>
+          </div>
+        </article>
+
+        <article class="work-card reveal tilt-card">
+          <div class="work-visual visual-unimanip">
+            <div class="graph-mini"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="visual-title">UniManip</div>
+          </div>
+          <div class="work-copy">
+            <div class="work-meta">Zero-Shot Manipulation · Robot Agent · Skill Graph</div>
+            <h3>UniManip</h3>
+            <p>A general-purpose zero-shot manipulation framework built around an Agentic Operational Graph for task decomposition, reusable skill composition and closed-loop adaptation.</p>
+            <div class="work-links"><a href="#">Paper ↗</a><a href="#">Code ↗</a><a href="#">Project ↗</a></div>
+          </div>
+        </article>
+
+        <article class="work-card reveal tilt-card">
+          <div class="work-visual visual-dex">
+            <div class="hand-shape"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="visual-title">AnyDexManip</div>
+          </div>
+          <div class="work-copy">
+            <div class="work-meta">Dexterous Manipulation · Affordance · VLM</div>
+            <h3>AnyDexManip</h3>
+            <p>VLM-guided affordance reasoning and spatial understanding for multi-fingered dexterous manipulation, targeting stronger zero-shot generalization to unseen objects and tasks.</p>
+            <div class="work-links"><a href="#">Paper ↗</a><a href="#">Video ↗</a><a href="#">Project ↗</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-work reveal">
+        <div class="more-label">More publications</div>
+        <a href="#" class="more-item"><span>VLAI</span><small>Visual-Language Aligned Information for Object Goal Navigation</small><b>2026 ↗</b></a>
+        <a href="#" class="more-item"><span>Beyond Phonetic Similarity</span><small>LLM Robustness under Realistic Keyboard Mis-typing</small><b>2026 ↗</b></a>
+      </div>
+    </section>
+
+    <section id="interests" class="section-shell section-block">
+      <div class="section-heading reveal compact">
+        <div>
+          <div class="section-kicker">Research Interests</div>
+          <h2>Three directions, one goal.</h2>
+        </div>
+      </div>
+      <div class="interest-grid">
+        <article class="interest-card reveal">
+          <span>01</span>
           <h3>Spatial Intelligence</h3>
-          <p>Scene understanding, spatial relations, object search, partial observability and reasoning over hidden or out-of-view targets.</p>
+          <p>Understanding object relations, hidden states, partial observability and geometry in complex 3D environments.</p>
         </article>
-        <article class="research-card reveal delay-1">
-          <div class="index">B</div>
-          <h3>Agentic Robotics</h3>
-          <p>General-purpose robot agents integrating perception, memory, task planning, skill execution and closed-loop feedback.</p>
+        <article class="interest-card reveal delay-1">
+          <span>02</span>
+          <h3>Robot Agents</h3>
+          <p>Unifying perception, memory, planning, skills and feedback into general-purpose embodied agent architectures.</p>
         </article>
-        <article class="research-card reveal delay-2">
-          <div class="index">C</div>
-          <h3>Generalizable Manipulation</h3>
-          <p>Zero-shot manipulation, skill reuse, VLA alignment, cross-object generalization, cross-embodiment and long-horizon execution.</p>
-        </article>
-        <article class="research-card reveal delay-3">
-          <div class="index">D</div>
-          <h3>Multimodal Learning</h3>
-          <p>VLM / LLM robustness, visual-language alignment, affordance reasoning, semantic grounding and multimodal decision making.</p>
+        <article class="interest-card reveal delay-2">
+          <span>03</span>
+          <h3>Generalist Manipulation</h3>
+          <p>Zero-shot and long-horizon manipulation across objects, tasks, embodiments and end-effectors.</p>
         </article>
       </div>
     </section>
 
-    <section id="publications" class="section-shell publications-section">
-      <div class="section-heading reveal">
-        <div class="section-kicker">03 — Selected Work</div>
-        <h2>Publications & research projects</h2>
+    <section id="about" class="section-shell section-block about-section">
+      <div class="about-main reveal">
+        <div class="section-kicker">About</div>
+        <h2>I build multimodal systems that can move from <span>understanding</span> to <span>execution.</span></h2>
+        <p>
+          My research spans VLM / LLM reasoning, active perception, robot planning and manipulation. I enjoy working across the full stack — from algorithm design and evaluation to simulation, system integration and real-robot deployment.
+        </p>
       </div>
 
-      <div class="pub-list">
-        <article class="pub reveal featured">
-          <div class="pub-year">2027</div>
-          <div class="pub-body">
-            <div class="pub-tags"><span>Open-World Manipulation</span><span>Active Perception</span><span>Memory</span></div>
-            <h3>Think Before You Act: Knowledge-Driven Continuous Manipulation for Open-World Robotic Tasks</h3>
-            <p>Introduces REAM, a knowledge-driven active manipulation framework that combines commonsense and episodic memory with real-time visual feedback to guide target search, interaction and dynamic replanning under occlusion, containment and out-of-view conditions.</p>
-            <div class="pub-note">ICRA 2027 submission · REAM / SCOPE</div>
-          </div>
-        </article>
-
-        <article class="pub reveal">
-          <div class="pub-year">2026</div>
-          <div class="pub-body">
-            <div class="pub-tags"><span>Zero-Shot</span><span>Robot Agent</span><span>Skill Graph</span></div>
-            <h3>UniManip: General-Purpose Zero-Shot Robotic Manipulation with Agentic Operational Graph</h3>
-            <p>Builds a general-purpose zero-shot manipulation system around an Agentic Operational Graph, enabling multimodal task decomposition, reusable skill composition, parameter adaptation and closed-loop execution across objects, spatial perturbations and long-horizon tasks.</p>
-          </div>
-        </article>
-
-        <article class="pub reveal">
-          <div class="pub-year">2026</div>
-          <div class="pub-body">
-            <div class="pub-tags"><span>Dexterous Manipulation</span><span>Affordance</span><span>VLM</span></div>
-            <h3>AnyDexManip: Multi-Fingered Dexterous Manipulation with VLM-Guided Affordance Reasoning and Spatial Understanding</h3>
-            <p>Combines VLM-guided affordance reasoning with spatial understanding to infer interaction regions and task constraints for multi-fingered dexterous manipulation, targeting stronger zero-shot generalization to unseen objects and diverse tasks.</p>
-          </div>
-        </article>
-
-        <article class="pub reveal">
-          <div class="pub-year">2026</div>
-          <div class="pub-body">
-            <div class="pub-tags"><span>Object Navigation</span><span>Vision-Language</span><span>Exploration</span></div>
-            <h3>VLAI: Exploration and Exploitation Based on Visual-Language Aligned Information for Robotic Object Goal Navigation</h3>
-            <p>Studies visual-language aligned cues for balancing exploration and exploitation in object-goal navigation, using semantic priors to reduce inefficient search and improve target-directed navigation in unknown environments.</p>
-          </div>
-        </article>
-
-        <article class="pub reveal">
-          <div class="pub-year">2026</div>
-          <div class="pub-body">
-            <div class="pub-tags"><span>LLM Robustness</span><span>Chinese NLP</span><span>Human Input Noise</span></div>
-            <h3>Beyond Phonetic Similarity: Unraveling LLM Robustness under Realistic Keyboard Mis-typing Perturbations</h3>
-            <p>Investigates LLM robustness under realistic Chinese keyboard mistyping, modeling perturbations from keyboard geometry and user input behavior and evaluating their impact across multiple tasks and language models.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="section-shell experience-section">
-      <div class="section-heading reveal">
-        <div class="section-kicker">04 — Experience</div>
-        <h2>Education & engineering</h2>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="time">2025 — 2026</div>
-          <div>
-            <h3>Nanyang Technological University</h3>
-            <p class="role">M.Sc. · Electrical & Electronic Engineering</p>
-            <p>Research in active perception, spatial intelligence, multimodal robot agents and open-world manipulation. Thesis work centers on Retrieval-Augmented Active Manipulation (REAM).</p>
-          </div>
+      <div class="about-side reveal delay-1">
+        <div class="about-item">
+          <small>Education</small>
+          <strong>Nanyang Technological University</strong>
+          <p>M.Sc. in Electrical & Electronic Engineering</p>
         </div>
-        <div class="timeline-item reveal">
-          <div class="time">Research</div>
-          <div>
-            <h3>Robotics Systems & Real-World Deployment</h3>
-            <p class="role">Simulation → real robot</p>
-            <p>Hands-on experience with MuJoCo and real robotic platforms, covering visual perception, VLM / LLM agents, motion planning, manipulation control, system integration, debugging and evaluation.</p>
-          </div>
+        <div class="about-item">
+          <small>Focus</small>
+          <strong>Spatial Intelligence & Embodied AI</strong>
+          <p>VLM · VLA · Agent · Manipulation</p>
         </div>
-        <div class="timeline-item reveal">
-          <div class="time">Internship</div>
-          <div>
-            <h3>Beizhong Wangxin</h3>
-            <p class="role">Chip Verification Intern</p>
-            <p>Participated in functional verification tasks, learned UVM-based verification workflows, developed test cases and assisted with module verification, debugging and result analysis.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="time">Leadership</div>
-          <div>
-            <h3>Southwest Jiaotong University–Leeds Joint School Football Team</h3>
-            <p class="role">Team Captain</p>
-            <p>Organized training and match arrangements, coordinated team members and on-field responsibilities, and developed strong leadership, communication and execution skills.</p>
-          </div>
+        <div class="about-item">
+          <small>Leadership</small>
+          <strong>Football Team Captain</strong>
+          <p>SWJTU–Leeds Joint School</p>
         </div>
       </div>
     </section>
 
-    <section class="section-shell skills-section">
-      <div class="section-heading reveal">
-        <div class="section-kicker">05 — Capabilities</div>
-        <h2>Algorithm + engineering</h2>
+    <section class="section-shell section-block capabilities-section">
+      <div class="capability reveal">
+        <div class="section-kicker">Algorithm</div>
+        <h3>Multimodal reasoning · VLM / LLM agents · Active perception · Spatial reasoning · Skill planning · VLA</h3>
       </div>
-      <div class="skill-grid">
-        <div class="skill-panel reveal">
-          <h3>Algorithms</h3>
-          <ul>
-            <li>Vision-Language Models & Multimodal Reasoning</li>
-            <li>LLM / VLM Agent Systems & Memory</li>
-            <li>Active Perception & Object Search</li>
-            <li>Robot Manipulation & Skill Planning</li>
-            <li>VLA / Long-Horizon Decision Making</li>
-            <li>Affordance & Spatial Reasoning</li>
-          </ul>
-        </div>
-        <div class="skill-panel reveal delay-1">
-          <h3>Engineering</h3>
-          <ul>
-            <li>Python · PyTorch · ROS / robotics integration</li>
-            <li>MuJoCo & robot simulation pipelines</li>
-            <li>RGB-D perception & visual grounding</li>
-            <li>Manipulation control & motion planning</li>
-            <li>System debugging & experiment automation</li>
-            <li>Real-robot deployment & evaluation</li>
-          </ul>
-        </div>
+      <div class="capability reveal delay-1">
+        <div class="section-kicker">Engineering</div>
+        <h3>Python · PyTorch · MuJoCo · Robotics integration · RGB-D perception · Motion planning · Real-robot deployment</h3>
       </div>
     </section>
 
     <section id="contact" class="section-shell contact-section reveal">
       <div class="contact-card">
         <div>
-          <div class="section-kicker">06 — Contact</div>
-          <h2>Interested in spatial intelligence and general-purpose robot agents?</h2>
-          <p>I am open to research collaborations and PhD opportunities related to embodied AI, multimodal reasoning, robot learning and open-world manipulation.</p>
+          <div class="section-kicker">Contact</div>
+          <h2>Let’s build more capable robot agents.</h2>
+          <p>Open to research collaborations and PhD opportunities in embodied AI, multimodal reasoning, spatial intelligence and robot learning.</p>
         </div>
         <div class="contact-links">
           <a href="mailto:your.email@example.com">Email <span>↗</span></a>
-          <a href="#" aria-label="GitHub placeholder">GitHub <span>↗</span></a>
-          <a href="#" aria-label="Google Scholar placeholder">Google Scholar <span>↗</span></a>
-          <a href="#" aria-label="LinkedIn placeholder">LinkedIn <span>↗</span></a>
+          <a href="https://github.com/yangli0519love-cmyk" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a href="#">Google Scholar <span>↗</span></a>
+          <a href="#">LinkedIn <span>↗</span></a>
         </div>
       </div>
     </section>

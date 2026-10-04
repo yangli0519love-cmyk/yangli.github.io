@@ -1,31 +1,21 @@
-# Yang Li Personal Website
+# Yang Li — Personal Academic Website
 
-A responsive one-page academic / robotics personal website.
+Minimal one-page research portfolio focused on Spatial Intelligence, Embodied AI and Multimodal Robotics.
 
-## Files
-- `index.html` — content and structure
-- `styles.css` — all visual styling
-- `script.js` — reveal animations and current year
+## Deploy on GitHub Pages
 
-## Customize before publishing
-Search in `index.html` for:
+1. Upload `index.html`, `styles.css`, and `script.js` to the repository root.
+2. GitHub → Settings → Pages.
+3. Source: `Deploy from a branch`.
+4. Branch: `main`, folder: `/ (root)`.
+5. Save and wait for deployment.
+
+## Replace placeholders
+
 - `your.email@example.com`
-- GitHub / Google Scholar / LinkedIn placeholder links (`href="#"`)
+- CV link
+- Google Scholar link
+- LinkedIn link
+- Paper / Code / Video / Project links
 
-You can also add:
-- profile photo
-- CV PDF link
-- paper / project / video links
-- exact undergraduate degree and dates
-
-## Preview locally
-Open `index.html` directly in a browser, or run:
-
-```bash
-python -m http.server 8000
-```
-
-then visit `http://localhost:8000`.
-
-## Publish
-Works directly on GitHub Pages, Netlify, Vercel, or any static web host.
+The GitHub profile link is already set to `https://github.com/yangli0519love-cmyk`.

@@ -2,7 +2,7 @@
    Never put private keys, passwords or unpublished personal data here. */
 window.SITE_CONFIG = {
   github: "https://github.com/yangli0519love-cmyk",
-  email: "",
+  email: "lyang018@e.ntu.edu",
   scholar: "",
   cv: "", // Example: "assets/CV.pdf" after uploading your real CV.
   linkedin: "",

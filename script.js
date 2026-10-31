@@ -66,6 +66,7 @@
   }
   addLink(extra, 'Scholar', config.scholar);
   addLink(extra, 'CV', config.cv);
+  addLink($('hero-cv'), 'CV', config.cv);
   addLink(extra, 'LinkedIn', config.linkedin);
   document.querySelectorAll('[data-links]').forEach(el => projectLinks(el, el.dataset.links));
   $('year').textContent = String(new Date().getFullYear());
